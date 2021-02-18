@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-18T06:02:24.945Z",
+    "end": "2021-02-18T06:02:42.663Z",
+    "duration": 17718,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e1912f3d-8416-4dd3-b305-f405defcd2fd",
+      "title": "",
+      "fullFile": "cypress\\integration\\AddressBook\\test\\LoginPage._spec.js",
+      "file": "cypress\\integration\\AddressBook\\test\\LoginPage._spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "661cdbdd-c4d1-4b9c-86cc-adfe16216044",
+          "title": "launching the address Book",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login into the application",
+              "fullTitle": "launching the address Book Login into the application",
+              "timedOut": null,
+              "duration": 9081,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.loginInToTheApp(this.testdata.Email, this.testdata.password);",
+              "err": {},
+              "uuid": "1bc14882-947d-431e-8283-8fbb879fc526",
+              "parentUUID": "661cdbdd-c4d1-4b9c-86cc-adfe16216044",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1bc14882-947d-431e-8283-8fbb879fc526"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9081,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFileName": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

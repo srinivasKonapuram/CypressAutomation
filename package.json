@@ -1,0 +1,28 @@
+{
+  "name": "addressbook",
+  "version": "1.0.0",
+  "description": "N",
+  "main": "Y",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "N",
+    "merge": "mochawesome-merge cypress/reports/*.json -o cypress/reports/output.json",
+    "generate_mochawesome_report": "marge cypress/reports/output.json --reportDir ./ --inline",
+    "final_report": "npm run merge && npm run generate_mochawesome_report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "N"
+  },
+  "keywords": [
+    "N"
+  ],
+  "author": "srinivas",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.4.0",
+    "cypress-file-upload": "^5.0.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0"
+  }
+}

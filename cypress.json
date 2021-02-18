@@ -1,0 +1,15 @@
+{
+    "env": {
+        "addressBookUrl": "http://a.testaddressbook.com/sign_in"
+    },
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/reports",
+        "reportFileName": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+    },
+    "video": false
+}

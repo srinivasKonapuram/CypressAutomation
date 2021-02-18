@@ -1,0 +1,19 @@
+{
+    "Email": "konapuramsrinivas677@gmail.com",
+    "password": "Srinivas@96",
+    "firstName": "father3",
+    "lastName": "testdata2",
+    "address1": "Jubilee Garden",
+    "address2": "Ram Mandir Road",
+    "city": "Hyd",
+    "state": "Arkansas",
+    "stateToValidate": "AR",
+    "zipCode": "509325",
+    "country": "United States",
+    "dateOfBirth": "11/11/1996",
+    "age": "20",
+    "webSite": "https://www.google.com/",
+    "phoneNumber": "123-456-7890",
+    "intrest": "Dancing",
+    "note": "testing"
+}
