@@ -24,9 +24,6 @@ class CreateAddressAndValidate {
     static note = "textarea#address_note";
     static createNewAddressButton = '[data-disable-with="Create Address"]';
 
-    static wholeTable = "table tbody tr";
-    static showbutton = "td a";
-
     static sucessMessage = "div.alert.alert-notice";
     static firstName_to_validate = '[data-test="first_name"]';
     static lastName_to_validate = '[data-test="last_name"]';
@@ -44,11 +41,6 @@ class CreateAddressAndValidate {
     static intrest_to_validate = '.col-3.col-md-2 strong';
     static note_to_validate = '[data-test="note"]';
 
-    static sign_out = '[data-test="sign-out"]';
-    static sign_in = "div#clearance h2"
-
-
-
     navigateToAddressCreationPage() {
         cy.get(CreateAddressAndValidate.addressButton).click()
         cy.get(CreateAddressAndValidate.newAddressButton).click()
@@ -57,9 +49,9 @@ class CreateAddressAndValidate {
     fillTheAddressForm(firstName, lastName, address1, address2, city, state, zipCode, country, dateOfBirth, age, webSite, phoneNumber, intrest, note) {
         cy.wait(200)
         //cy.get(CreateAddressAndValidate.firstName).type(firstName)
-        cy.typeTextIntoTheField(CreateAddressAndValidate.firstName,firstName)
-       // cy.get(CreateAddressAndValidate.lastName).type(lastName)
-        cy.typeTextIntoTheField(CreateAddressAndValidate.lastName,lastName)
+        cy.typeTextIntoTheField(CreateAddressAndValidate.firstName, firstName)
+        // cy.get(CreateAddressAndValidate.lastName).type(lastName)
+        cy.typeTextIntoTheField(CreateAddressAndValidate.lastName, lastName)
         cy.get(CreateAddressAndValidate.address1).type(address1)
         cy.get(CreateAddressAndValidate.address2).type(address2)
         cy.get(CreateAddressAndValidate.city).type(city)
@@ -80,12 +72,10 @@ class CreateAddressAndValidate {
         cy.get(CreateAddressAndValidate.note).type(note)
         cy.get(CreateAddressAndValidate.createNewAddressButton).click()
         VerificationHelper.verifyTextOnUI(CreateAddressAndValidate.sucessMessage, "Address was successfully created.")
-        cy.screenshot()
     }
 
     CheckTheDesierCheckBox(nameToMactch, $el) {
         const labelName = $el.text()
-        cy.log(labelName)
         if (labelName.includes(nameToMactch)) {
             cy.wrap($el).prev().check()
         }
@@ -93,14 +83,6 @@ class CreateAddressAndValidate {
     }
 
 
-    navigateToTheValidateForm(firstName) {
-        cy.get(CreateAddressAndValidate.addressButton).click()
-        cy.get(CreateAddressAndValidate.wholeTable).contains(firstName).parent()
-            .within(() => {
-                cy.get(CreateAddressAndValidate.showbutton).eq(0).click()
-
-            })
-    }
     validateTheAddressForm(firstName, lastName, address1, address2, city, stateToValidate, zipCode, dateOfBirth, age, webSite, phoneNumber, intrest, note) {
         VerificationHelper.validateTheFormDetails(CreateAddressAndValidate.firstName_to_validate, firstName)
         VerificationHelper.validateTheFormDetails(CreateAddressAndValidate.lastName_to_validate, lastName)
@@ -124,15 +106,7 @@ class CreateAddressAndValidate {
             }
         })
         VerificationHelper.validateTheFormDetails(CreateAddressAndValidate.note_to_validate, note)
-        cy.screenshot()
     }
-
-    doSignOut() {
-        cy.get(CreateAddressAndValidate.sign_out).click()
-        VerificationHelper.verifyTextOnUI(CreateAddressAndValidate.sign_in, "Sign in")
-    }
-
-
 }
 
 const createAddressAndValidate = new CreateAddressAndValidate()

@@ -18,12 +18,12 @@ describe('adding new address and validating the added address', () => {
 
     it('Validate the added address', function () {
         cy.loginInToTheApp(this.testdata.Email, this.testdata.password)
-        createAddressAndValidate.navigateToTheValidateForm(this.testdata.firstName)
+        cy.clickOnSpecifiedText(this.testdata.firstName,'show')
         createAddressAndValidate.validateTheAddressForm(this.testdata.firstName, this.testdata.lastName, this.testdata.address1, this.testdata.address2, this.testdata.city, this.testdata.stateToValidate, this.testdata.zipCode, this.testdata.dateOfBirth, this.testdata.age, this.testdata.webSite, this.testdata.phoneNumber, this.testdata.intrest, this.testdata.note)
 
     })
     afterEach('Sign out', () => {
-        createAddressAndValidate.doSignOut()
+      cy.logOutFromTheApp()
     })
 
 })

@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-01T05:25:52.193Z",
+    "end": "2021-03-01T05:26:18.976Z",
+    "duration": 26783,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "724e89c5-6df4-4ce2-b101-cec2dc269f53",
+      "title": "",
+      "fullFile": "cypress\\integration\\AddressBook\\test\\02_AddaddressAndValidate_spec.js",
+      "file": "cypress\\integration\\AddressBook\\test\\02_AddaddressAndValidate_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "38e96833-ccf0-42c5-a2f2-f731a933f42c",
+          "title": "adding new address and validating the added address",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add New address in the application",
+              "fullTitle": "adding new address and validating the added address Add New address in the application",
+              "timedOut": null,
+              "duration": 18298,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.loginInToTheApp(this.testdata.Email, this.testdata.password);\n_AddaddressAndValidatePage[\"default\"].navigateToAddressCreationPage();\n_AddaddressAndValidatePage[\"default\"].fillTheAddressForm(this.testdata.firstName, this.testdata.lastName, this.testdata.address1, this.testdata.address2, this.testdata.city, this.testdata.state, this.testdata.zipCode, this.testdata.country, this.testdata.dateOfBirth, this.testdata.age, this.testdata.webSite, this.testdata.phoneNumber, this.testdata.intrest, this.testdata.note);",
+              "err": {},
+              "uuid": "26613189-f9d0-4d40-badc-2712e5d34d2a",
+              "parentUUID": "38e96833-ccf0-42c5-a2f2-f731a933f42c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate the added address",
+              "fullTitle": "adding new address and validating the added address Validate the added address",
+              "timedOut": null,
+              "duration": 3709,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.loginInToTheApp(this.testdata.Email, this.testdata.password);\ncy.clickOnSpecifiedText(this.testdata.firstName, 'show');\n_AddaddressAndValidatePage[\"default\"].validateTheAddressForm(this.testdata.firstName, this.testdata.lastName, this.testdata.address1, this.testdata.address2, this.testdata.city, this.testdata.stateToValidate, this.testdata.zipCode, this.testdata.dateOfBirth, this.testdata.age, this.testdata.webSite, this.testdata.phoneNumber, this.testdata.intrest, this.testdata.note);",
+              "err": {},
+              "uuid": "bfe0dc14-11da-4bcf-aaa3-8a7e8d6fa64c",
+              "parentUUID": "38e96833-ccf0-42c5-a2f2-f731a933f42c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "26613189-f9d0-4d40-badc-2712e5d34d2a",
+            "bfe0dc14-11da-4bcf-aaa3-8a7e8d6fa64c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22007,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFileName": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

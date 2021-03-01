@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-02-18T06:02:24.945Z",
-    "end": "2021-02-18T06:02:42.663Z",
-    "duration": 17718,
+    "start": "2021-03-01T05:25:26.448Z",
+    "end": "2021-03-01T05:25:45.820Z",
+    "duration": 19372,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "e1912f3d-8416-4dd3-b305-f405defcd2fd",
+      "uuid": "1f8747b4-6077-4a95-ab63-c794cb5bdb68",
       "title": "",
-      "fullFile": "cypress\\integration\\AddressBook\\test\\LoginPage._spec.js",
-      "file": "cypress\\integration\\AddressBook\\test\\LoginPage._spec.js",
+      "fullFile": "cypress\\integration\\AddressBook\\test\\01_LoginPage_spec.js",
+      "file": "cypress\\integration\\AddressBook\\test\\01_LoginPage_spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "661cdbdd-c4d1-4b9c-86cc-adfe16216044",
+          "uuid": "75a33d84-4205-49c3-b3f8-91250706a7d0",
           "title": "launching the address Book",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login into the application",
               "fullTitle": "launching the address Book Login into the application",
               "timedOut": null,
-              "duration": 9081,
+              "duration": 9495,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.loginInToTheApp(this.testdata.Email, this.testdata.password);",
               "err": {},
-              "uuid": "1bc14882-947d-431e-8283-8fbb879fc526",
-              "parentUUID": "661cdbdd-c4d1-4b9c-86cc-adfe16216044",
+              "uuid": "19288356-6bcd-40a7-aa06-4a3088539346",
+              "parentUUID": "75a33d84-4205-49c3-b3f8-91250706a7d0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1bc14882-947d-431e-8283-8fbb879fc526"
+            "19288356-6bcd-40a7-aa06-4a3088539346"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9081,
+          "duration": 9495,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
